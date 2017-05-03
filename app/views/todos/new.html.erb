@@ -1,26 +1,9 @@
 <h3 align="center">Create a new ToDo</h3><hr/>
 
-<% if @todo.errors.any? %>
+<%= render 'shared/errors' %>
+<div class="card">
+	<div class="card-content">
+        <%= render 'form' %>
+    </div>
+</div>
 
-    <h2>The following errors prevented the todo from saving</h2>
-    <ul>
-        <%@todo.errors.full_messages.each do |msg| %>
-        <li><%= msg%></li>
-        <% end %>
-    </ul>
-
-<% end %>
-<%= form_for @todo do |f| %>
-    <p>
-        <%= f.label :name %> <br>
-        <%= f.text_field :name %>
-    </p>
-    <p>
-        <%= f.label :description %> <br>
-        <%= f.text_area :description %>
-    </p>
-    <p>
-        <%= f.submit %>
-    </p>
-<% end %>
-<%= link_to "Back to Todos Listing", todos_path %>
