@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.page-footer{
+    margin-top: 50px;
+}
+
+ul li > a{
+   color: #fff; 
+}

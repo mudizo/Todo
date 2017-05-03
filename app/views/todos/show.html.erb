@@ -1,5 +1,7 @@
-<h3>Showing a Todo</h3>
+<h3 align="center">Showing a Todo</h3>
 
+<div class="card">
+	<div class="card-content">
 <p>
 name: <%= @todo.name %>
 </p>
@@ -7,7 +9,12 @@ name: <%= @todo.name %>
 description: <%= @todo.description %>
 </p>
 
-<%= link_to "Edit this todo", edit_todo_path(@todo) %> |
-<%= link_to "Back to todos listing", todos_path %>
+</div>
+</div>
+
+<a href="<%= edit_todo_path %>" class="btn waves-effect waves-light" name="action">Edit Todo</a>
+<a href="<%= todos_path %>" class="btn waves-effect waves-light" name="action">Todos Listing</a>
+
+
 
 
