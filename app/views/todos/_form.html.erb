@@ -8,7 +8,8 @@
             <%= f.text_area :description, :placeholder => 'Description', :length => '200', :class => 'materialize-textarea' %>
         </div>
         
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        <%=  f.submit :class=> "btn waves-effect waves-light" %>
+        <!--<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>-->
           <a href="<%= todos_path %>" class="btn waves-effect waves-light" name="action">Todos Listing</a>
       
     <% end %>
