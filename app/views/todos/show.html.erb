@@ -3,17 +3,17 @@
 <div class="card">
 	<div class="card-content">
 <p>
-name: <%= @todo.name %>
+Name: <%= @todo.name %>
 </p>
 <p>
-description: <%= @todo.description %>
+Description: <%= @todo.description %>
 </p>
 
 </div>
 </div>
 
-<a href="<%= edit_todo_path %>" class="btn waves-effect waves-light" name="action">Edit Todo</a>
-<a href="<%= todos_path %>" class="btn waves-effect waves-light" name="action">Todos Listing</a>
+<a href="<%= edit_todo_path %>" class="btn waves-effect waves-light red" name="action">Edit Todo</a>
+<a href="<%= todos_path %>" class="btn waves-effect waves-light red" name="action">Go To Listing</a>
 
 
 

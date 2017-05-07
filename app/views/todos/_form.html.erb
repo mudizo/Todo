@@ -1,4 +1,4 @@
-<%= render 'shared/errors' %>
+    <%= render 'shared/errors' %>
     <%= form_for @todo do |f| %>
         <div class="input-field col s6">
             
@@ -8,9 +8,9 @@
             <%= f.text_area :description, :placeholder => 'Description', :length => '200', :class => 'materialize-textarea' %>
         </div>
         
-        <%=  f.submit :class=> "btn waves-effect waves-light" %>
+        <%=  f.submit :class=> "btn waves-effect waves-light red" %>
         <!--<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>-->
-          <a href="<%= todos_path %>" class="btn waves-effect waves-light" name="action">Todos Listing</a>
+          <a href="<%= todos_path %>" class="btn waves-effect waves-light red" name="action">Go To Listing</a>
       
     <% end %>
 
