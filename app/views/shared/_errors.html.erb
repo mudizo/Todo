@@ -1,6 +1,6 @@
 <% if @todo.errors.any? %>
 
-    <h2>The following errors prevented the todo from saving</h2>
+    <h4>The following error(s) prevented this todo from saving</h4>
     <ul>
         <% @todo.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
