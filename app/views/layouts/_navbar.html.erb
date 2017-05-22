@@ -5,6 +5,14 @@
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Add Todo", new_todo_path , :class => "waves-effect waves-light btn orange red" %></a></li>
+        <!--<div id="user-widget">-->
+        <% if current_user %>
+        Welcome <strong><%= current_user.name %></strong>!
+        <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+        <% else %>
+        <li><%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></li>
+        <% end %>
+
       </ul>
     </div>
   </nav>
